@@ -39,7 +39,7 @@ def evaluate_mode():
 
     true_answer = input("Enter the true answer from textbook: ")
 
-    rag_answer = rag_model.get_answer(true_answer)
+    rag_answer = rag_model.get_rag_answer(true_answer)
     print("RAG Answer:", rag_answer)
 
     non_rag_answer = evalaute.get_non_rag_answer(true_answer)
